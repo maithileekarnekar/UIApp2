@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40px"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:gravity="center_horizontal"
+        android:text="Bitcode"
+        android:textSize="50px"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:padding="8dp"
+            android:background="@color/black"
+            android:id="@+id/imgIndia"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/flag_india"/>
+        <ImageView
+            android:padding="8dp"
+            android:id="@+id/imgUsa"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/flag_usa" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Welcome"
+        android:textSize="30px" />
+    
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+</LinearLayout>
